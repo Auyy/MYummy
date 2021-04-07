@@ -1,0 +1,255 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <!-- Required meta tags -->
+  <meta charset="utf-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1" />
+
+  <!-- bootstrap -->
+  <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.0.0-beta3/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-eOJMYsd53ii+scO/bJGFsiCZc+5NDVN2yr8+0RDqr0Ql0h+rP48ckxlpbzKgwra6" crossorigin="anonymous">
+  <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.0.0-beta3/dist/js/bootstrap.bundle.min.js" integrity="sha384-JEW9xMcG8R+pH31jmWH6WWP0WintQrMb4s7ZOdauHnUtxwoG2vI5DkLtS3qm9Ekf" crossorigin="anonymous"></script>
+
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.3/css/all.min.css" />
+  <link rel="stylesheet" type="text/css" href="css/style-contact.css">
+  <link rel="stylesheet" href="https://www.w3schools.com/w3css/4/w3.css">
+
+  <link rel="preconnect" href="https://fonts.gstatic.com">
+  <link href="https://fonts.googleapis.com/css2?family=Mitr:wght@300&display=swap" rel="stylesheet">
+
+  <link rel=”shortcut icon” href=”http://example.com/favicon.png” />
+  <link rel="icon" type="image/png" sizes="16x16" href="images/favicon.png">
+
+  <title>Starycat</title>
+</head>
+
+<body>
+   <!-- Navbar -->
+<div class="w3-top">
+  <div class="w3-bar w3-orange w3-card">
+    <a class="w3-bar-item w3-button w3-padding-large w3-hide-medium w3-hide-large w3-right" href="javascript:void(0)" onclick="myFunction()" title="Toggle Navigation Menu"><i class="fa fa-bars"></i></a>
+    <a href="#" class="w3-bar-item"><img src="img/logo.png" id="logo"></a>
+    <a href="index.html" class="w3-bar-item w3-hide-small">หน้าแรก</a>
+    <a href="#" class="w3-bar-item w3-hide-small">ข่าว</a>
+    <a href="feature.html" class="w3-bar-item w3-hide-small">หาบ้านให้น้อง</a>
+    <a href="#" class="w3-bar-item w3-hide-small">เกี่ยวกับเรา</a>
+    <a href="contact.html" class="w3-bar-item w3-hide-small">ติดต่อเรา</a>
+  </div>
+</div>
+
+<!-- Navbar on small screens (remove the onclick attribute if you want the navbar to always show on top of the content when clicking on the links) -->
+<div id="navDemo" class="w3-bar-block w3-orange w3-hide w3-hide-large w3-hide-medium w3-top" style="margin-top:70px">
+  <a href="index.html" class="w3-bar-item " onclick="myFunction()">หน้าแรก</a>
+  <a href="#" class="w3-bar-item" onclick="myFunction()">ข่าว</a>
+  <a href="feature.html" class="w3-bar-item" onclick="myFunction()">หาบ้านให้น้อง</a>
+  <a href="#" class="w3-bar-item" onclick="myFunction()">เกี่ยวกับเรา</a>
+  <a href="contact.html" class="w3-bar-item" onclick="myFunction()">ติดต่อเรา</a>
+</div>
+
+  <script>
+      // Used to toggle the menu on small screens when clicking on the menu button
+      function myFunction() {
+        var x = document.getElementById("navDemo");
+        if (x.className.indexOf("w3-show") == -1) {
+          x.className += " w3-show";
+        } else { 
+          x.className = x.className.replace(" w3-show", "");
+        }
+      }
+  </script>
+      <!-- Navbar -->
+
+      <div id="carouselExampleSlidesOnly" class="carousel slide" data-bs-ride="carousel">
+        <div class="carousel-inner">
+          <div class="carousel-item active">
+            <img src="images/bg_3.jpg" class="d-block w-100" alt="...">
+            <div class="text_banner">
+              <h1 class="text-1">มูลนิธิสเทรแคช</h1>
+              <p class="text-2">ได้ดูแลรักษาสัตว์มากมาย</p>
+              </div>
+          </div>
+          <div class="carousel-item">
+            <img src="images/bg_2.jpg" class="d-block w-100" alt="...">
+            <div class="text_banner">
+              <h1 class="text-1">“เสียงจากเรา”</h1>
+              <p class="text-2">โครงการหาบ้านให้น้องแมว</p>
+              </div>
+          </div>
+          <div class="carousel-item">
+            <img src="images/bg_1.jpg" class="d-block w-100" alt="...">
+            <div class="text_banner">
+              <h1 class="text-1">จะดีกว่าดีไหม ถ้าโลกนี้ไม่มีแมวจร</h1>
+              <p class="text-2">#ไม่พร้อมไม่รับเลี้ยง</p>
+              </div>
+          </div>
+        </div>
+      </div>
+
+  <!-- container -->
+  <div class="container-c">
+    <div class="container">
+      <div class="row">
+        <div class="col-md-12">
+          <form>
+            <ul class="tab">
+              <li class="col-md-6">
+                <a href="javascript:void(0)" class="tablinks" onclick="openblock(event,'sign-up')">ที่ตั้ง</a>
+              </li>
+              <li class="col-md-6">
+                <a href="javascript:void(0)" class="tablinks" onclick="openblock(event,'login')">สอบถาม</a>
+              </li>
+            </ul>
+
+            <div id="sign-up" class="tabcontent" style="color: #B35B00 !important; background-color: #E2E2E2;">
+              <div class="form-group">
+                <!--Google map-->
+               <div id="map-container-google" class="z-depth-1-half map-container" style="height: 500px">
+                   <iframe src="https://maps.google.com/maps?q=chicago&t=&z=13&ie=UTF8&iwloc=&output=embed" frameborder="0" style="border:0" allowfullscreen></iframe>
+              </div>
+                <!--Google Maps-->
+              </div>
+            </div>
+
+            <div id="login" class="tabcontent" style="color: #B35B00 !important; background-color: #E2E2E2;">
+              <div class="form-group">
+                <label for="exampleInputEmail1" class="form-label">ชื่อ - นามสกุล</label>
+                <input type="email" class="form-control" id="exampleInputEmail1" placeholder="ชื่อ - นามสกุล" aria-describedby="emailHelp">
+              </div>
+              <div class="form-group">
+                <label for="exampleInputEmail1" class="form-label">อีเมล</label>
+                <input type="email" class="form-control" id="exampleInputEmail1" placeholder="อีเมล" aria-describedby="emailHelp">
+              </div>
+              <div class="form-group">
+                <label for="exampleInputEmail1" class="form-label">หัวข้อ</label>
+                <input type="email" class="form-control" id="exampleInputEmail1" placeholder="หัวข้อ" aria-describedby="emailHelp">
+              </div>
+              <div class="form-group">
+                <label for="exampleFormControlTextarea1" class="form-label">ข้อความ</label>
+                <textarea class="form-control" id="exampleFormControlTextarea1" rows="3"></textarea>
+              </div>
+              <div class="form-group" style="padding-top: 10px;">
+                <div class="input-group justify-content-md-center" style="z-index: 0;">
+                  <button type="submit" class="btn btn-secondary">ล้างข้อมูล</button>
+                  <button type="submit" class="btn btn-primary" >ส่งข้อมูล</button>
+                </div>
+              </div>
+            </div>
+          </form>
+        </div>
+      </div>
+    </div>
+  </div>
+  </div>
+
+  <!-- box -->
+  <div class="container-fluid">
+    <div class="container" style="padding-top: 24px;">
+      <div class="row text-center">
+        <div class="col-md-4">
+          <div class="card">
+            <i class="fas fa-question-circle" style="font-size: 64px;"></i>
+            <div class="card-body">
+              <p class="card-text"> คำถามที่พบบ่อย</p>
+            </div>
+          </div>
+        </div>
+
+        <div class="col-md-4">
+          <div class="card">
+            <i class="fas fa-hands-helping" style="font-size: 64px;"></i>
+            <div class="card-body">
+              <p class="card-text">กิจกรรม</p>
+            </div>
+          </div>
+        </div>
+
+        <div class="col-md-4">
+          <div class="card">
+            <i class="fas fa-database" style="font-size: 64px;"></i>
+            <div class="card-body">
+              <p class="card-text">คลังข้อมูล</p>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+  </div>
+  <!-- box -->
+
+  <div class="contact">
+    <div class="container">
+      <div class="row">
+        <div class="col-md-6">
+          <img src="images/cri_1.jpg" class="pi_cri_1">
+          <div class="group">
+            <div class="bg" style="z-index: -1;"></div>
+            <img src="images/cri_2.jpg" class="pi_cri_2" >
+          </div>
+          <img src="images/cri_3.jpg" class="pi_cri_3">
+        </div>
+        <div class="col-md-6" style="padding-top: 24px;">
+          <h3>ช่องทางการติดต่อ</h3>
+          <p class="text-c"><i class="fas fa-phone-square-alt"></i>098-456-7122</p>
+          <p class="text-c"><i class="fab fa-facebook-square"></i>Stary Cat</p>
+          <p class="text-c"><i class="fab fa-line"></i>@Starycat</p>
+          <p class="text-c"><i class="fab fa-instagram"></i>@Starycat</p>
+        </div>
+      </div>
+    </div>
+  </div>
+
+  <footer class="footer">
+    <div class="container">
+      <div class="row">
+        <div class="col-md-4">
+          <img src="./img/logo.png" class="img" style="max-height: 120px; max-width: 120px;" alt="" srcset="">
+        </div>
+        <div class="col-md-4">
+          <p class="text-center">Starycat@2021</p>
+        </div>
+        <div class="col-md-4">
+          <div class="bar-footer">
+            <p class="text-contact">ติดต่อเรา</p>
+              <div class="box-contact"> 
+                  <i class="fas fa-phone-square-alt"></i> 
+               </div>
+               <div class="box-contact">  
+                  <i class="fab fa-facebook-square"></i>
+                </div>
+                <div class="box-contact">  
+                  <i class="fab fa-line"></i>
+                </div>
+                <div class="box-contact">  
+                  <i class="fab fa-instagram"></i>
+                </div>
+          </div>
+        </div>
+      </div>
+    </div>
+  </footer>
+
+  <script>
+    function openblock(evt, blockname) {
+      var i, tabcontent, tablinks;
+      tabcontent = document.getElementsByClassName("tabcontent");
+      for (i = 0; i < tabcontent.length; i++) {
+        tabcontent[i].style.display = "none";
+      }
+      tablinks = document.getElementsByClassName("tablinks");
+      for (i = 0; i < tablinks.length; i++) {
+        tablinks[i].className = tablinks[i].className.replace(" active", "");
+      document.getElementById(blockname).style.display = "block";
+        evt.currentTarget.className += " active";
+    }
+      }
+ 
+  </script>
+  
+
+ <!-- bootstrap -->
+<script src="https://cdn.jsdelivr.net/npm/@popperjs/core@2.9.1/dist/umd/popper.min.js" integrity="sha384-SR1sx49pcuLnqZUnnPwx6FCym0wLsk5JZuNx2bPPENzswTNFaQU1RDvt3wT4gWFG" crossorigin="anonymous"></script>
+<script src="https://cdn.jsdelivr.net/npm/bootstrap@5.0.0-beta3/dist/js/bootstrap.min.js" integrity="sha384-j0CNLUeiqtyaRmlzUHCPZ+Gy5fQu0dQ6eZ/xAww941Ai1SxSY+0EQqNXNE6DZiVc" crossorigin="anonymous"></script>
+
+</body>
+
+</html>

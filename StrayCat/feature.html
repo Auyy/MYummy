@@ -1,0 +1,327 @@
+<html >
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Strat Cat</title>
+
+    <link rel=”shortcut icon” href=”http://example.com/favicon.png” />
+    <link rel="icon" type="image/png" sizes="16x16" href="images/favicon.png">
+
+    <!-- bootstrap -->
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.0.0-beta3/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-eOJMYsd53ii+scO/bJGFsiCZc+5NDVN2yr8+0RDqr0Ql0h+rP48ckxlpbzKgwra6" crossorigin="anonymous">
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.0.0-beta3/dist/js/bootstrap.bundle.min.js" integrity="sha384-JEW9xMcG8R+pH31jmWH6WWP0WintQrMb4s7ZOdauHnUtxwoG2vI5DkLtS3qm9Ekf" crossorigin="anonymous"></script>
+    
+
+    <link rel="stylesheet" type="text/css" href="css/reset.css">
+    <link rel="stylesheet" type="text/css" href="css/jquery.bxslider.css">
+    <link rel="stylesheet" type="text/css" href="css/font-awesome.min.css">
+    <link href="https://fonts.googleapis.com/css2?family=Prompt&display=swap" rel="stylesheet">
+    <link rel="stylesheet" type="text/css" href="css/style-feature.css">
+    <link rel="stylesheet" type="text/css" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.2/css/all.min.css"> 
+    
+    <link rel="preconnect" href="https://fonts.gstatic.com">
+    <link href="https://fonts.googleapis.com/css2?family=Mitr:wght@300&display=swap" rel="stylesheet">
+
+
+    <link rel="stylesheet" href="https://www.w3schools.com/w3css/4/w3.css">
+    <script type="text/javascript" src="js/jquery.js"></script>
+    <script type="text/javascript" src="js/jquery.min.js"></script>
+    <script type="text/javascript" src="js/jquery.bxslider.js"></script>
+    <script type="text/javascript" src="js/menu_button.js"></script>
+    
+    <script src="assets/vendors/jquery.min.js"></script>
+    <script src="assets/owlcarousel/owl.carousel.js"></script>
+
+
+</head>
+<body>
+
+    <!-- Navbar -->
+<div class="w3-top">
+    <div class="w3-bar w3-orange w3-card">
+      <a class="w3-bar-item w3-button w3-padding-large w3-hide-medium w3-hide-large w3-right" href="javascript:void(0)" onclick="myFunction()" title="Toggle Navigation Menu"><i class="fa fa-bars"></i></a>
+      <a href="#" class="w3-bar-item"><img src="img/logo.png" id="logo"></a>
+      <a href="index.html" class="w3-bar-item w3-hide-small active">หน้าแรก</a>
+      <a href="#" class="w3-bar-item w3-hide-small">ข่าว</a>
+      <a href="feature.html" class="w3-bar-item w3-hide-small">หาบ้านให้น้อง</a>
+      <a href="#" class="w3-bar-item w3-hide-small">เกี่ยวกับเรา</a>
+      <a href="contact.html" class="w3-bar-item w3-hide-small">ติดต่อเรา</a>
+    </div>
+  </div>
+  
+  <!-- Navbar on small screens (remove the onclick attribute if you want the navbar to always show on top of the content when clicking on the links) -->
+  <div id="navDemo" class="w3-bar-block w3-orange w3-hide w3-hide-large w3-hide-medium w3-top" style="margin-top:70px">
+    <a href="index.html" class="w3-bar-item active" onclick="myFunction()">หน้าแรก</a>
+    <a href="#" class="w3-bar-item" onclick="myFunction()">ข่าว</a>
+    <a href="feature.html" class="w3-bar-item" onclick="myFunction()">หาบ้านให้น้อง</a>
+    <a href="#" class="w3-bar-item" onclick="myFunction()">เกี่ยวกับเรา</a>
+    <a href="contact.html" class="w3-bar-item" onclick="myFunction()">ติดต่อเรา</a>
+</div>
+
+    <script>
+        // Used to toggle the menu on small screens when clicking on the menu button
+        function myFunction() {
+          var x = document.getElementById("navDemo");
+          if (x.className.indexOf("w3-show") == -1) {
+            x.className += " w3-show";
+          } else { 
+            x.className = x.className.replace(" w3-show", "");
+          }
+        }
+    </script>
+        <!-- Navbar -->
+
+        <!-- content -->
+        <div id="carouselExampleSlidesOnly" class="carousel slide" data-bs-ride="carousel">
+          <div class="carousel-inner">
+            <div class="carousel-item active">
+              <img src="images/bg_2.jpg" class="d-block w-100" alt="...">
+              <div class="text_banner">
+                <h1 class="text-1">“เสียงจากเรา”</h1>
+                <p class="text-2">โครงการหาบ้านให้น้องแมว</p>
+                </div>
+            </div>
+            <div class="carousel-item">
+              <img src="images/bg_1.jpg" class="d-block w-100" alt="...">
+              <div class="text_banner">
+                <h1 class="text-1">จะดีกว่าดีไหม ถ้าโลกนี้ไม่มีแมวจร</h1>
+                <p class="text-2">#ไม่พร้อมไม่รับเลี้ยง</p>
+                </div>
+            </div>
+            <div class="carousel-item">
+              <img src="images/bg_3.jpg" class="d-block w-100" alt="...">
+              <div class="text_banner">
+                <h1 class="text-1">มูลนิธิสเทรแคช</h1>
+                <p class="text-2">ได้ดูแลรักษาสัตว์มากมาย</p>
+                </div>
+            </div>
+          </div>
+        </div>
+         <!-- content -->
+
+         <!-- news -->
+         <section class="condition-home">
+                    <div class="condition-conteent-1">
+                        <h1>เงื่อนไขการรับเลี้ยง<br></h1>
+                        <img src="images/FontAwsome (github).png" class="pi_conteent-1">
+                        <!-- <i class="fas fa-arrow-right"></i> -->
+                    
+                    </div>
+                    <div class="condition-conteent-2">
+                        <i class="fas fa-home"></i>
+                        <h1> ผู้รับอุปการะสัตว์เลี้ยงเพื่อเป็นสัตว์เลี้ยง<br>
+                            ภายในบ้านหรือดูแลบ้านและทรัพย์สิน<br>
+                            เท่านั้นโดยต้องมีการเลี้ยงดูสัตว์มี<br>
+                            สวัสดิภาพที่ดี
+                    </h1>
+                    </div>
+                    <div class="condition-conteent-3">
+                        <div class="condition-conteent-3-1">
+                            <img src="images/con_2.jpg" class="condition-conteent-img">
+                        </div>
+                        <div class="condition-conteent-3-2">
+                            <i class="fas fa-paper-plane"></i>
+                            <h1>หากมีเหตุใดๆทำให้ผู้รับไม่สามารถดูแลสัตว์เลี้ยง<br>
+                                ได้อีกต่อไปให้ติดต่อคืนสัตว์เลี้ยงแก่มูลนิธิ<br>
+                                ไม่สามารถส่งต่อให้ผู้อื่นได้ <br>
+                            </h1>
+                            
+                        </div>
+                    
+                    </div>
+                    <div class="condition-conteent-4">
+                        <i class="fas fa-dollar-sign"></i>
+                        <h1>ห้ามผู้รับ นำสัตว์เลี้ยงที่ได้รับมอบ<br>
+                            จากผู้ให้ไปใช้ในเชิงพาณิชย์
+                    </h1>       
+                    </div>
+                    <div class="condition-conteent-5">
+                        <!-- <h1>"NEW-1"<br>
+                        W=320px H=300px<br>
+                        text=center size=24px </h1>-->
+                        <div class="condition-conteent-5-1">
+                            <img src="images/con_1.jpg" class="condition-conteent-img">
+                        </div>
+                        <div class="condition-conteent-5-2">
+                            <i class="fas fa-paper-plane"></i>
+                            <h1> ผู้รับอุปการะสัตว์เลี้ยงจะต้องส่งหลักฐาน<br>
+                              ความเป็นอยู่ของน้องมาทุกเดือน
+                            </h1>
+                            </div>
+                    
+                    </div>
+                    <div class="condition-conteent-6">
+                        <i class="fas fa-gavel"></i>
+                        <h1>หากพบว่าสัตว์เลี้ยงมีสวัสดิภาพที่ย่ำแย่ <br>
+                            ทางมูลนิธิที่จะดำเนินการตามกฎหมาย<br>
+                            ข้อหาทารุณกรรมสัตว์ต่อผู้รับ
+                    </h1>
+                    </div>
+        </section>
+        
+<!-- news -->
+
+<!-- search -->
+         <section>
+           <div class="search">
+            <div class="top-search">หาบ้านให้น้อง</div>
+             <div class="box-search">
+              
+               <div class="text-search-1">เพศ
+                <div class="box-g">
+                 <!-- <div class="box-bg-g"> -->
+                   <button class="box-gender">
+                    <div class="text-gender-1">ทั้งหมด</div>
+                    </button>
+                   <button class="box-gender">
+                    <div class="text-gender-2">เมีย</div>
+                    </button>
+                   <button class="box-gender">
+                    <div class="text-gender-3">ผู้</div>
+                    </button>
+                  </div>
+                  <!-- </div> -->
+                  </div>
+
+               <div class="text-search-2">สายพันธ์ุ
+                   <select name="province" id="province-1">
+                      <option value="" selected>พันธ์ุ</option>
+                      <option value="volvo">ไทย</option>
+                      <option value="saab">เปอร์เซีย</option>
+                      <option value="opel">บงกอล</option>
+                      <option value="audi">สก็อตชโฟลด์</option>
+                    </select></div>
+              <div class="text-search-3">จังหวัด
+                   <select name="province" id="province-2">
+                     <option value="" selected>จังหวัด</option>
+                     <option value="volvo">กรุงเทพ</option>
+                     <option value="saab">กระบี่</option>
+                     <option value="opel">เพชรบุรี</option>
+                     <option value="audi">ราชบุรี</option>
+                   </select></div>
+              <div class="text-search-4">สี
+                  <select name="province" id="province-3">
+                     <option value="" selected>สี</option>
+                     <option value="volvo">ส้ม</option>
+                     <option value="saab">เทา</option>
+                     <option value="opel">ดำ</option>
+                     <option value="audi">3 สี</option>
+                   </select>
+                </div>
+                <div class="text-search-5">ทำหมัน
+                    <Form class="text-search-5-1">
+                    <input type="radio" name="gender" value="Yes" checked> ทำแล้ว<br>
+                    <input type="radio" name="gender" value="no"> ยังไม่ทำ<br>
+                    </Form>
+                  </div>
+              <button class="button-search">ค้นหา</button>
+             </div>
+           </div>
+         </section>
+         <!-- search -->
+
+         <!-- result-home -->
+         <section>
+           <div class="result-home">
+
+             <div class="result-bg">
+                 <img src="images/fea_1.jpg" class="pi_home">
+                 <div class="reult-text">ชื่อ : ดำ</div>
+                 <div class="reult-text">สายพันธ์ : สก็อต</div>
+                 <div class="reult-text">ทำหมัน : ทำหมันแล้ว</div>
+                 <div class="reult-text">เพศ : ตัวเมีย</div>
+                 <button class="button-home">รายละเอียด</button>
+             </div>
+
+             <div class="result-bg">
+              <img src="images/fea_2.jpg" class="pi_home">
+              <div class="reult-text">ชื่อ : ถุงทอง</div>
+              <div class="reult-text">สายพันธ์ : สก็อตติชโฟล์ด</div>
+              <div class="reult-text">ทำหมัน : ยังไม่ทำหมัน</div>
+              <div class="reult-text">เพศ : ตัวผู้</div>
+              <button class="button-home">รายละเอียด</button>
+          </div>
+              
+          <div class="result-bg">
+            <img src="images/fea_3.2.jpg" class="pi_home">
+            <div class="reult-text">ชื่อ : มณี</div>
+            <div class="reult-text">สายพันธ์ : วิเชียรมาศ</div>
+            <div class="reult-text">ทำหมัน : ทำหมันแล้ว</div>
+            <div class="reult-text">เพศ : ตัวเมีย</div>
+            <button class="button-home">รายละเอียด</button>
+          </div>
+
+          <div class="result-bg">
+            <img src="images/fea_4.2.jpg" class="pi_home">
+            <div class="reult-text">ชื่อ : เสือ</div>
+            <div class="reult-text">สายพันธ์ : ไทย</div>
+            <div class="reult-text">ทำหมัน : ยังไม่ทำหมัน</div>
+            <div class="reult-text">เพศ : ตัวผู้</div>
+            <button class="button-home">รายละเอียด</button>
+          </div>
+
+          <div class="result-bg">
+            <img src="images/fea_5.jpg" class="pi_home">
+            <div class="reult-text">ชื่อ : กังฟู</div>
+            <div class="reult-text">สายพันธ์ : ไทย</div>
+            <div class="reult-text">ทำหมัน : ยังไม่ทำหมัน</div>
+            <div class="reult-text">เพศ : ตัวเมีย</div>
+            <button class="button-home">รายละเอียด</button>
+          </div>
+
+          <div class="result-bg">
+            <img src="images/fea_6.jpg" class="pi_home">
+            <div class="reult-text">ชื่อ : เลิฟ</div>
+            <div class="reult-text">สายพันธ์ : สฟิงซ์</div>
+            <div class="reult-text">ทำหมัน : ทำหมันแล้ว</div>
+            <div class="reult-text">เพศ : ตัวผู้</div>
+            <button class="button-home">รายละเอียด</button>
+          </div>
+
+          <div class="box-1">
+            <div class="text-box">1</div>
+          </div>
+          <div class="box-2">
+            <div class="text-box">2</div>
+          </div>
+          <div class="box-3">
+            <div class="text-box">3</div>
+          </div>
+
+           </div>
+         </section>
+        <!-- result-home -->
+
+
+
+<!-- footer -->
+      <footer>
+        <div id="footer">
+          <img src="images/logo.png" class="logo-last">
+          <div class="text-footer">Straycat@2021</div>
+
+          <div class="bar-footer">
+             <p class="text-contact">ติดต่อเรา</p>
+               <div class="box-contact"> 
+                   <i class="fas fa-phone-square-alt"></i> 
+                </div>
+                <div class="box-contact">  
+                   <i class="fab fa-facebook-square"></i>
+                 </div>
+                 <div class="box-contact">  
+                   <i class="fab fa-line"></i>
+                 </div>
+                 <div class="box-contact">  
+                   <i class="fab fa-instagram"></i>
+                 </div>
+           </div>
+        </div>
+      </footer>
+<!-- footer -->
+
+<!-- bootstrap -->
+<script src="https://cdn.jsdelivr.net/npm/@popperjs/core@2.9.1/dist/umd/popper.min.js" integrity="sha384-SR1sx49pcuLnqZUnnPwx6FCym0wLsk5JZuNx2bPPENzswTNFaQU1RDvt3wT4gWFG" crossorigin="anonymous"></script>
+<script src="https://cdn.jsdelivr.net/npm/bootstrap@5.0.0-beta3/dist/js/bootstrap.min.js" integrity="sha384-j0CNLUeiqtyaRmlzUHCPZ+Gy5fQu0dQ6eZ/xAww941Ai1SxSY+0EQqNXNE6DZiVc" crossorigin="anonymous"></script>
+
+</body>
+</html>
