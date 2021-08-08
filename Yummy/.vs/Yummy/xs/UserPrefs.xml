@@ -1,0 +1,38 @@
+﻿<Properties StartupConfiguration="{5DEF00BA-8BD3-41AE-98DC-8F76BD1E1EDE}|Default">
+  <MonoDevelop.Ide.Workbench ActiveDocument="Yummy/Views/Home/Index.cshtml">
+    <Files>
+      <File FileName="Yummy/Controllers/ProductController.cs" Line="183" Column="32" />
+      <File FileName="Yummy/Views/Product/Index.cshtml" Line="37" Column="85" />
+      <File FileName="Yummy/Views/Product/Edit.cshtml" Line="13" Column="62" />
+      <File FileName="Yummy/Views/Product/Details.cshtml" Line="30" Column="14" />
+      <File FileName="Yummy/Views/Product/Delete.cshtml" Line="31" Column="14" />
+      <File FileName="Yummy/Views/Product/Create.cshtml" Line="13" Column="64" />
+      <File FileName="Yummy/Views/Shared/_Layout.cshtml" Line="43" Column="30" />
+      <File FileName="Yummy/Views/Home/Index.cshtml" Line="1" Column="1" />
+    </Files>
+    <Pads>
+      <Pad Id="ProjectPad">
+        <State name="__root__">
+          <Node name="Yummy" expanded="True">
+            <Node name="Yummy" expanded="True">
+              <Node name="Views" expanded="True">
+                <Node name="Home" expanded="True">
+                  <Node name="Index.cshtml" selected="True" />
+                </Node>
+                <Node name="Shared" expanded="True" />
+              </Node>
+              <Node name="wwwroot" expanded="True" />
+            </Node>
+          </Node>
+        </State>
+      </Pad>
+    </Pads>
+  </MonoDevelop.Ide.Workbench>
+  <MonoDevelop.Ide.DebuggingService.PinnedWatches />
+  <MonoDevelop.Ide.ItemProperties.Yummy FirstBuild="True" PreferredExecutionTarget="/Applications/Google Chrome.app" />
+  <MonoDevelop.Ide.Workspace ActiveConfiguration="Debug" />
+  <MonoDevelop.Ide.DebuggingService.Breakpoints>
+    <BreakpointStore />
+  </MonoDevelop.Ide.DebuggingService.Breakpoints>
+  <MultiItemStartupConfigurations />
+</Properties>
